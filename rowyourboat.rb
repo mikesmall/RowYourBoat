@@ -26,9 +26,23 @@
 # 5. Return the new array
 
 song = [["row", 3], ["your", 1], ["boat", 1]]
-sing = []
 
-# Instructor suggests:
 first_subarray = song[0]
 second_subarray = song[1]
 third_subarray = song[2]
+
+result = []
+
+def repeat(word, number_of_times)
+  return_value = []
+  number_of_times.times do
+    return_value << word
+  end
+  return_value
+end
+
+result << repeat(first_subarray[0], first_subarray[1])
+result << repeat(second_subarray[0], second_subarray[1])
+result << repeat(third_subarray[0], third_subarray[1])
+
+puts result 
